@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JwtstudentApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Olá");
 		SpringApplication.run(JwtstudentApplication.class, args);
 	}
 
