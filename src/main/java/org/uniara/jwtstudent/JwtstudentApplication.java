@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@OpenAPIDefinition(info = @Info(title = "API Users/Student", version = "1.0", description = "API REST Users/Student with JWT auth"))
+@OpenAPIDefinition(info = @Info(title = "API Studs/Student", version = "1.0", description = "API REST Users/Student with JWT auth"))
 public class JwtstudentApplication {
 
 	public static void main(String[] args) {
