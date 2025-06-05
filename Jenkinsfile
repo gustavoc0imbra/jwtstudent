@@ -16,7 +16,6 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'mvn clean install -DskipTests',
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
         }
 
