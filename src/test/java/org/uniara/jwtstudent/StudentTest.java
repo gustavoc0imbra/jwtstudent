@@ -3,7 +3,6 @@ package org.uniara.jwtstudent;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.uniara.jwtstudent.models.Student;
 
 public class StudentTest {
     @Test
@@ -13,11 +12,6 @@ public class StudentTest {
         System.out.println("Teste Concluido com Sucesso ");
         System.out.println("*************************");
 
-    }
-
-    @Test
-    public void test_auth_return_unauthorized() {
-        Assertions.assertTrue(true);
     }
 }
 

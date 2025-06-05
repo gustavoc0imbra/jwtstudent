@@ -6,6 +6,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.util.Collections;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,11 +33,12 @@ public class GetStudentTest {
 
     //teste metodo get
     @Test
+    @DisplayName("O usuário deve conseguir listar todos estudantes")
     public void getStudentsOk() throws Exception {
         Mockito.when(jwtTokenProvider.validateToken(Mockito.anyString())).thenReturn(true);
         Mockito.when(studentService.findAll()).thenReturn(Collections.emptyList());
 
-        mockMvc.perform(get("/api/students")
+        mockMvc.perform(get("/api/v1/students")
                         .header("Authorization", "Bearer test-token"))
                 .andExpect(status().isOk());
     }
