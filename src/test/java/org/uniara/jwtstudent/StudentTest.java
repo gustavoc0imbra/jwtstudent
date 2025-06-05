@@ -9,6 +9,10 @@ public class StudentTest {
     @Test
     public void test() {
         Assertions.assertTrue(true);
+        System.out.println("*************************");
+        System.out.println("Teste Concluido com Sucesso ");
+        System.out.println("*************************");
+
     }
 
     @Test
